@@ -40,17 +40,21 @@
                         <h1>article header h1</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec.</p>
                     </header>
-                    <section
->                        <h2><?= $caption2; ?></h2>
-                     <figure>
-                        <img src="<?= $selectedImage2; ?>" alt="Random image">
-                        <figcaption><?= $caption2; ?></figcaption>
+                    <section>    
+
+                     <figure><h1>Þessar tvær myndir eru aldrei sama</h1>
+                                                <?php
+                     for( $i = 0; $i < 2; $i++)
+                         echo "
+                         <img src='$pic[$i]'>";
+ 
+                            ?>
                     </figure>
                     </section>
                     <section>
                         <h2><?= $caption; ?></h2>
                      <figure>
-                        <img src="<?= $selectedImage; ?>" alt="Random image">
+                        <img src="<?= $selectedImage; ?>" alt="Random image" >
                         <figcaption><?= $caption; ?></figcaption>
                     </figure>
                     </section>

@@ -14,13 +14,7 @@
  $i = rand(0, count($images)-1);
  $selectedImage = "includes/images/{$images[$i]['file']}.jpg";
  $caption = $images[$i]['caption'];
- $i = rand(0, count($images)-1);
- $selectedImage2 = "includes/images/{$images[$i]['file']}.jpg";
- $caption2 = $images[$i]['caption'];
- if ($selectedImage == $selectedImage2)
- {
- 	 $i = rand(0, count($images)-1);
- 	$selectedImage2 = "includes/images/{$images[$i]['file']}.jpg";
- 	$caption2 = $images[$i]['caption'];
- }
-  
+
+
+$pic = array('includes/images/mynd1.jpg','includes/images/mynd2.jpg','includes/images/mynd3.jpg','includes/images/mynd4.jpg','includes/images/mynd5.jpg');
+shuffle($pic);
